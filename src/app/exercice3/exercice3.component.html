@@ -1,0 +1,11 @@
+<div class="exercice3">
+    <p *ngIf="status; else elseBlock">
+        p1
+    </p>
+    <ng-template #elseBlock>
+        <p>
+            p2
+        </p>
+    </ng-template>
+    <button (click)='changeStatus()'>Change Status</button>
+</div>
